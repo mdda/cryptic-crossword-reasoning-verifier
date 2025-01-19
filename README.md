@@ -2,7 +2,10 @@
 
 This repo is a copy of the relevant code for the paper XXX.
 
-* Code Quick-start : Have a look at the Jupyter Notebooks (pre-rendered) in `./notebooks`
+Code Quick-start : 
+
+* Have a look at the Jupyter Notebooks (pre-rendered) in `./notebooks`
+* And (for the main `solver` library) in `./solver` 
 
 Related Paper :
 
