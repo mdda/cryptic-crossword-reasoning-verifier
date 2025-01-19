@@ -95,23 +95,23 @@ Indicator word lists (included via [rdeits/cryptics installation](https://github
 ```bash
 # Pull in the CrypticCrosswords library for its abbreviations and actions data
 git clone https://github.com/rdeits/CrypticCrosswords.jl.git solver/
-```
 
 echo '# NEW ADDITIONS' >> solver/CrypticCrosswords.jl/corpora/indicators/InitialSubstring
 echo 'briefly' >> solver/CrypticCrosswords.jl/corpora/indicators/InitialSubstring
 echo 'most of' >> solver/CrypticCrosswords.jl/corpora/indicators/InitialSubstring
-
+```
 
 ## Using the Gemini-LLM
 
-The Gemini-Flash-002 model is used via `arc_mdda/models/gemini.py`, 
-and will use (by default) the VertexAI credentials you provide in `./key-vertexai-iam.json`
+The `gemini-1.5-flash-001` model is used via `solver/llm.py`, 
+and will use the VertexAI credentials you provide in `./key-vertexai-iam.json`, 
+and/or the API key provided in `./config.yaml`
 
 ```bash
 export GOOGLE_APPLICATION_CREDENTIALS="./key-vertexai-iam.json"
 ```
 
-The code also allows for usage of the $FREE Gemini API 
+The code also allows for usage of the \$FREE Gemini API 
 (for which you'll need to add a `free=True` flag to the `get_model()` calls).
 
 
