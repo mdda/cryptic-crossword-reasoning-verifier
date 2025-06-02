@@ -1,6 +1,9 @@
 # cryptic-crossword-reasoning-verifier
 
-This repo is a copy of the relevant code for the paper XXX.
+This repo is a copy of the relevant code for the paper:
+
+"A Reasoning-Based Approach to Cryptic Crossword Clue Solving" - Andrews & Witteveen (2025)
+  + Accepted at ICML 2025 (==Forty-second International Conference on Machine Learning).
 
 Code Quick-start : 
 
