@@ -168,4 +168,4 @@ jupytext --set-formats cache-notebooks//ipynb,py XYZ.py
 
 ### Acknowledgements
 
-* **TBA**
+* Support for this research was provided by the Google AI Developer Programs team, including access to the Gemini models and GPUs on Google Cloud Platform.
