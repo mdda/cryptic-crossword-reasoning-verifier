@@ -2,7 +2,7 @@
 
 This repo is a copy of the relevant code for the paper:
 
-"A Reasoning-Based Approach to Cryptic Crossword Clue Solving" - Andrews & Witteveen (2025)
+* "A Reasoning-Based Approach to Cryptic Crossword Clue Solving" - Andrews & Witteveen (2025)
   + Accepted at ICML 2025 (==Forty-second International Conference on Machine Learning).
 
 Code Quick-start : 
@@ -10,7 +10,12 @@ Code Quick-start :
 * Have a look at the Jupyter Notebooks (pre-rendered) in `./notebooks`
 * And (for the main `solver` library) in `./solver` 
 
-Related Paper :
+Related Papers :
+
+* ["Generating Code to Verify Cryptic Crossword Reasoning"](https://openreview.net/forum?id=2nC7zy7adD) - Andrews & Witteveen (2025)
+  + Accepted at the [ICLR 2025 Deep Learning for Code Workshop](https://dl4c.github.io/)
+  + [Workshop Poster](https://iclr.cc/media/PosterPDFs/ICLR%202025/34846.png)
+  + [Workshop listing includes SlidesLive Video](https://iclr.cc/virtual/2025/34846)
 
 * ["Proving that Cryptic Crossword Clue Answers are Correct"](https://arxiv.org/abs/2407.08824) - Andrews & Witteveen (2024)
   + Accepted at the [ICML 2024 Workshop on LLMs and Cognition](https://llm-cognition.github.io/)
