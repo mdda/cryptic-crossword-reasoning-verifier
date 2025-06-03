@@ -163,7 +163,16 @@ jupytext --set-formats cache-notebooks//ipynb,py XYZ.py
 
 ## Citing this work
 
-* **TBA**
+```bibtex
+@inproceedings{andrews-cryptic-reasoning-2025,
+  title={A Reasoning-Based Approach to {Cryptic Crossword} Clue Solving},
+  author={Martin Andrews and Sam Witteveen},
+  booktitle={Forty-second International Conference on Machine Learning},
+  year={2025},
+  url={https://openreview.net/forum?id=kBTgizDiCq}
+}
+```
+
 
 
 ### Acknowledgements
