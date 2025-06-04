@@ -1,14 +1,15 @@
 # cryptic-crossword-reasoning-verifier
 
-This repo is a copy of the relevant code for the paper:
-
-* "A Reasoning-Based Approach to Cryptic Crossword Clue Solving" - Andrews & Witteveen (2025)
-  + Accepted at ICML 2025 (==Forty-second International Conference on Machine Learning).
-
 Code Quick-start : 
 
 * Have a look at the Jupyter Notebooks (pre-rendered) in `./notebooks`
 * And (for the main `solver` library) in `./solver` 
+
+
+This repo is a copy of the relevant code for the paper:
+
+* "A Reasoning-Based Approach to Cryptic Crossword Clue Solving" - Andrews & Witteveen (2025)
+  + Accepted at ICML 2025 (==Forty-second International Conference on Machine Learning).
 
 Related Papers :
 
@@ -30,6 +31,18 @@ A good cryptic clue contains three elements:
 * a precise definition
 * a fair subsidiary indication
 * nothing else
+
+
+## "Lay Summary"
+
+We're interested in a type of puzzle common in major newspapers (in the UK, and elsewhere) : Cryptic Crosswords.
+Each cryptic clue hints to its unique answer in two ways : a 'regular crossword definition' and 'wordplay'.
+Our work uses a large language model (LLM) to deliver its solution in the Python programming language,
+which means that we can easily tell whether the LLM has got the reasoning correct, 
+and enables our method to beat ChatGPT and other models.
+Our framework also shows that linguistic tasks can be addressed 
+via similar methods to mathematics and programming problems.
+
 
 ## Get external libraries/data
 
