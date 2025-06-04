@@ -37,11 +37,17 @@ A good cryptic clue contains three elements:
 
 We're interested in a type of puzzle common in major newspapers (in the UK, and elsewhere) : Cryptic Crosswords.
 Each cryptic clue hints to its unique answer in two ways : a 'regular crossword definition' and 'wordplay'.
-Our work uses a large language model (LLM) to deliver its solution in the Python programming language,
-which means that we can easily tell whether the LLM has got the reasoning correct, 
-and enables our method to beat ChatGPT and other models.
-Our framework also shows that linguistic tasks can be addressed 
-via similar methods to mathematics and programming problems.
+Because the wordplay and definition must have the same answer, 
+solvers know whether they've got the answer correct (even without having other answers in the crossword grid).
+
+Our work uses a large language model (LLM) to guess possible answers, 
+and then justify the reasoning, finally delivering its solution in the Python programming language.
+By getting the reasoning as a small computer program,
+we can easily tell whether the LLM has got the reasoning correct, 
+and this enables our method to beat ChatGPT and other models.
+
+Although we focused on Cryptic Crosswords, our ideas could also be applied to other linguistic tasks, 
+opening them up to methods that are more commonly used for mathematics and programming problems.
 
 
 ## Get external libraries/data
