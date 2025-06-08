@@ -1,15 +1,16 @@
 # cryptic-crossword-reasoning-verifier
 
-Code Quick-start : 
+## Code Quick-start : 
 
 * Have a look at the Jupyter Notebooks (pre-rendered) in `./notebooks`
 * And (for the main `solver` library) in `./solver` 
 
+## Papers
 
 This repo is a copy of the relevant code for the paper:
 
-* "A Reasoning-Based Approach to Cryptic Crossword Clue Solving" - Andrews & Witteveen (2025)
-  + Accepted at ICML 2025 (==Forty-second International Conference on Machine Learning).
+* ["A Reasoning-Based Approach to Cryptic Crossword Clue Solving"](http://arxiv.org/abs/2506.04824) - Andrews & Witteveen (2025)
+  + Accepted at ICML 2025 Forty-second International Conference on Machine Learning).
 
 Related Papers :
 
@@ -21,7 +22,6 @@ Related Papers :
 * ["Proving that Cryptic Crossword Clue Answers are Correct"](https://arxiv.org/abs/2407.08824) - Andrews & Witteveen (2024)
   + Accepted at the [ICML 2024 Workshop on LLMs and Cognition](https://llm-cognition.github.io/)
   + [Explainer Video on YouTube](https://www.youtube.com/watch?v=vLITb6XDTQ8)
-
 
 ## Overview
 
@@ -188,7 +188,8 @@ jupytext --set-formats cache-notebooks//ipynb,py XYZ.py
   author={Martin Andrews and Sam Witteveen},
   booktitle={Forty-second International Conference on Machine Learning},
   year={2025},
-  url={https://openreview.net/forum?id=kBTgizDiCq}
+  url={https://openreview.net/forum?id=kBTgizDiCq},
+  url_arxiv={http://arxiv.org/abs/2506.04824}
 }
 ```
 
