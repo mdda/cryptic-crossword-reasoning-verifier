@@ -151,11 +151,11 @@ class Actions(object):
 import time, re
 
 class CrosswordDictionary(object):   # Includes vector embeddings
-  def __init__(self, embedder, crossword_dictionary_file='./UKACD.txt', as_lower_case=True):
+  def __init__(self, embedder, crossword_dictionary_file='./UKACD.txt', as_lower_case=True, strip_header=True):
     self.as_lower_case = as_lower_case
     crossword_dictionary=[]
     with open(crossword_dictionary_file, 'r', encoding='ISO-8859-1') as f:
-      started=False
+      started=(not strip_header)
       for line in f.readlines():
         if line.startswith('-------'):
           started=True
