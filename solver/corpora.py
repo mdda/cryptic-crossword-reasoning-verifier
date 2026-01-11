@@ -197,19 +197,27 @@ class CrosswordDictionary(object):   # Includes vector embeddings
       print(f"Loading {as_lower_case=} embeddings took {(time.time()-t0):.3}s")  # 1.7 sec
     self.vec = vec
 
-  def find_nearest_words(self, phrase, k=10, pattern=None):
+  def find_nearest_words(self, phrase, k=10, pattern=None, substrings=[]):
     if pattern is not None:
       from . import pattern_to_re
       pattern_re = pattern_to_re(pattern)
     if self.as_lower_case: 
       phrase=phrase.lower()
+      substrings = [s.lower() for s in substrings]
     v = self.embedder.get_normalised_phrase_vector(phrase)
     scores = np.dot(self.vec, v)
     idx_arr = np.argsort(-scores)
     nearest=[]
     for idx in idx_arr:
+      valid=False
       match = self.wordlist[idx]
       if pattern is None or re.match(pattern_re, match):
+        valid=True  # We have passed the number pattern test
+      for s in substrings:
+        if s not in match: 
+          valid=False
+          break
+      if valid:
         nearest.append(dict(phrase=match, score=scores[idx]))
         k-=1
         if k<=0: break
