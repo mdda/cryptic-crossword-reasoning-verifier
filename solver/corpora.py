@@ -54,7 +54,7 @@ import numpy as np
 # Consider also : https://github.com/qdrant/fastembed
 
 class VectorEmbedder(object):
-  def __init__(self):
+  def __init__(self, model_file="./cc.en.100.bin"):
     # https://fasttext.cc/docs/en/crawl-vectors.html#adapt-the-dimension
     import fasttext.util
     #fasttext.util.download_model('en', if_exists='ignore')  # English
@@ -63,10 +63,9 @@ class VectorEmbedder(object):
     #fasttext.util.reduce_model(ft, 100)
     #ft.get_dimension() # 100
     #ft.save_model('cc.en.100.bin')  # Use this in the code...
-    model_name = './cc.en.100.bin'
-    self.ft = fasttext.load_model(model_name)
+    self.ft = fasttext.load_model(model_file)
     self.dim = self.ft.get_dimension()
-    print(f"Loaded {model_name}")
+    print(f"Loaded {model_file}")
 
   def get_normalised_phrase_vector(self, phrase):
     if ' ' in phrase:
