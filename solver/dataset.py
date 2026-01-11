@@ -16,9 +16,9 @@ def get_shuffled_idx(data, seed=42):
   return shuffled_idx
 #shuffled_idx = get_shuffled_idx(data_test)
 
-def load_cryptonite_dataset(split): # train, val, test
+def load_cryptonite_dataset(split, dataset_path="./data_orig"): # train, val, test
   d=[]
-  with open(f'./data_orig/cryptonite-{split}.jsonl', 'rt') as f:
+  with open(f'{dataset_path}/cryptonite-{split}.jsonl', 'rt') as f:
     for l in f.readlines():
      data = json.loads(l)
      data['number']=str(data['number'])  # Some dataset entries have bad string-ification
